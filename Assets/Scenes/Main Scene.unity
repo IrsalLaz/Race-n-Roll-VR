@@ -4827,10 +4827,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 491515834, guid: 1e8e1924bb442334c9125455634bb567, type: 3}
-      propertyPath: turnPoint
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1144978573833690, guid: 1e8e1924bb442334c9125455634bb567, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -4907,12 +4903,23 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 95879256730774250, guid: 1e8e1924bb442334c9125455634bb567, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8b9a677f24793ba45bdc27a1dab7745e, type: 2}
+    - target: {fileID: 95879256730774250, guid: 1e8e1924bb442334c9125455634bb567, type: 3}
+      propertyPath: m_CullingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95879256730774250, guid: 1e8e1924bb442334c9125455634bb567, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3661853907880631720, guid: 1e8e1924bb442334c9125455634bb567, type: 3}
       propertyPath: speed
-      value: 5
+      value: 100
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 491515834, guid: 1e8e1924bb442334c9125455634bb567, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e8e1924bb442334c9125455634bb567, type: 3}
 --- !u!1001 &2424286570598424432
 PrefabInstance:
@@ -5289,7 +5296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5543818013695858108, guid: 9f8dcd6d84b2c0148a0fadc354dbb7cc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.41711044
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5543818013695858108, guid: 9f8dcd6d84b2c0148a0fadc354dbb7cc, type: 3}
       propertyPath: m_LocalPosition.z

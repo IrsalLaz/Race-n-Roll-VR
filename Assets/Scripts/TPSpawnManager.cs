@@ -20,7 +20,7 @@ public class TPSpawnManager : MonoBehaviour
             new Vector3(88f, 0f, 90f),
             new Vector3(80f, 0f, 26f),
             new Vector3(24f, 0f, 26f),
-            new Vector3(26f, 0f, 38.5f)
+            new Vector3(26f, 0f, 44f)
         };
 
         SpawnTPPrefab();
