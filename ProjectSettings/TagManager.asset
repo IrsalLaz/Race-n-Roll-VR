@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - turnPoint
+  - Enemy
+  - FinishLine
+  - Terrain
+  - PosDetector
   layers:
   - Default
   - TransparentFX
