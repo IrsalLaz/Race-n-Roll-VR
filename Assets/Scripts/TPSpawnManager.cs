@@ -16,9 +16,9 @@ public class TPSpawnManager : MonoBehaviour
         // Initialize the list of spawn positions
         spawnPositions = new List<Vector3>
         {
-            new Vector3(26f, 0f, 90f),
+            new Vector3(27f, 0f, 90f),
             new Vector3(88f, 0f, 90f),
-            new Vector3(80f, 0f, 26f),
+            new Vector3(86f, 0f, 26f),
             new Vector3(24f, 0f, 26f),
             new Vector3(26f, 0f, 44f)
         };
