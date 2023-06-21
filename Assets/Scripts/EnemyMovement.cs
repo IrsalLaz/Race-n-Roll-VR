@@ -10,7 +10,6 @@ public class EnemyMovement : MonoBehaviour
     public float prepareTime;
     private Rigidbody enemyRb;
     private Animator enemyAnimate;
-    private float jumpTimer = 0f;
     bool isGameStart = false;
     GameManager gameManager;
     public ParticleSystem explosionParticle;
@@ -18,6 +17,7 @@ public class EnemyMovement : MonoBehaviour
     public Transform turnPoint;
     Vector3 lookDirection;
     int currentPos = 3;
+    bool isGameActive;
 
     // Start is called before the first frame update
     void Start()
@@ -27,16 +27,17 @@ public class EnemyMovement : MonoBehaviour
 
         enemyRb = GetComponent<Rigidbody>();
         enemyAnimate = GetComponent<Animator>();
-        jumpTimer = 2f;
-
+        
         //delay for preparation time
         Invoke(nameof(StartGame), prepareTime);
+
+        isGameActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isGameStart)
+        if (isGameStart && isGameActive)
         {
             StartGame();
         }
@@ -62,6 +63,8 @@ public class EnemyMovement : MonoBehaviour
         {
             Debug.Log("Bot finish Game over");
             gameManager.GameOver();
+
+            isGameActive = false;
         }
 
         // Check if the collided object is the tpPrefab
