@@ -8,6 +8,10 @@ public class MenuController : MonoBehaviour
     public void StartBtn()
     {
         SceneManager.LoadScene("MainScene");
-        Debug.Log("kepencet");
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

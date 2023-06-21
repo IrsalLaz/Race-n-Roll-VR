@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public TextMeshProUGUI gameOverText;
+    public TextMeshProUGUI finishOverText;
     public TextMeshProUGUI positionText;
     public Button restartButton;
     int currentPos = 1;
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
         restartButton.gameObject.SetActive(true);
         gameOverText.gameObject.SetActive(true);
         positionText.gameObject.SetActive(true);
+        restartButton.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -44,8 +47,8 @@ public class GameManager : MonoBehaviour
         {
             currentPos += enemyPos;
             positionText.text = currentPos + "/" + lastPos;
-
         }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -54,5 +57,14 @@ public class GameManager : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy")) {
             UpdatePos(-1);
         }
+
+        if (other.gameObject.CompareTag("Finish")) {
+            finishOverText.gameObject.SetActive(true);
+        }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
