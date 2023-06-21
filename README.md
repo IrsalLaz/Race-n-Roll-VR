@@ -5,8 +5,8 @@ Race N Roll Balap Karung VR adalah sebuah game balap karung yang menggabungkan k
 [<img src="https://i.ytimg.com/vi/OuY6gkNGLo4/maxresdefault.jpg" width="50%">](https://youtu.be/OuY6gkNGLo4 "Now in Android: 55")
 
 ## Link Race N Roll VR
-Download: https://irsallaz.itch.io/race-n-roll-balap-karung-vr
-Project: https://telkomuniversityofficial-my.sharepoint.com/:f:/g/personal/amirhf_telkomuniversity_ac_id/Ejoxmcp4rbRArgZczBImv_YBVXYrAN7HLxHS-qTjYwJlBg?e=1IhEHB
+* Download: https://irsallaz.itch.io/race-n-roll-balap-karung-vr
+* Project: https://telkomuniversityofficial-my.sharepoint.com/:f:/g/personal/amirhf_telkomuniversity_ac_id/Ejoxmcp4rbRArgZczBImv_YBVXYrAN7HLxHS-qTjYwJlBg?e=1IhEHB
 
 ## Cara Bermain
 * Persiapkan perangkat VR dan jalankan Game
